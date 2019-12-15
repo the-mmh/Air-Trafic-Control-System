@@ -34,3 +34,12 @@ On the UI there is input table where ATC officers is supposed to enter the detai
 ## How to run the Web application
 
 Simply put all the above file in a folder named "ATC" and open the html file.
+
+## How to run the model
+
+1) put all files in same folder "ATC".
+2) open cmd/poweshell/bash shell
+3) navigate to folder ATC
+4) compile app.py file using command: python app.py
+5) go to homepage of website and click on make predictions
+6) Enter the values and get your predictions.
