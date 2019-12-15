@@ -1,0 +1,13 @@
+body { 
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background: #092756;
+	color: #fff;
+	font-size: 18px;
+	text-align:center;
+	letter-spacing:1.2px;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background: linear-gradient(ellipse at top, grey, transparent);
+
+}

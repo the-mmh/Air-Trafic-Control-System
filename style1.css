@@ -1,0 +1,226 @@
+.abcd{
+	background:rgba(0,0,0,0.5);
+	color:white;
+	padding:20px;
+}
+.abc{
+	background:rgba(10,10,10,0.3);
+	color:white;
+	padding:20px;
+	text-decoration:bold;
+	font-family:calibri;
+	
+	
+}
+
+
+.td{
+border-style:none solid solid none;
+font-family: calibri;  
+font-size:20px;
+padding:10px;
+}
+.l{
+	background:rgba(30,30,30,0.5);
+	line-height:65px;
+	position:fixed;
+	border-radius:0px 10px 10px 0px;
+	margin-left:-190px;
+	transition: margin-left 1s;
+	margin-top:-200px;
+	box-shadow: 0px 0px 10px #000000;
+}
+.l:hover{
+	margin-left:-10px;
+
+}
+
+.atclink{
+	text-decoration:none;
+	font-family:calibri;
+	color:white;
+	font-size:20px;
+	transition:background 1s,padding-right 0.7s, box-shadow 0.7s, font-size 0.5s;
+	padding-top:20px;
+	padding-left:20px;
+	padding-bottom:20px;
+	padding-right:50px;
+
+}
+.atclink:hover{
+	background:grey;
+	padding-right:70px;
+	box-shadow: 0px 0px 10px #000000;
+	font-size:25px;
+}
+
+
+
+.title{
+	background:rgba(130,130,130,0.5);
+	border-radius:10px 10px 10px 10px;
+	padding:10px;
+	font-family:Consolas;
+	font-size:40px;
+	color:rgb(230,230,220);
+	transition: background 1s,color 0.5s,box-shadow 0.5s;
+}
+.title:hover{
+	background: rgba(230,230,230,0.7);
+	color:black;
+	box-shadow:0px 0px 10px #000000;
+}
+
+
+
+.table{
+	margin-left:300px;
+	
+	
+}
+
+
+
+.atctable{
+	margin-top:100px;
+	background: rgba(0,0,0,0.4);
+	padding-right:100px;
+	padding-left:100px;
+	padding-top:40px;
+	padding-bottom:40px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 10px #000000;
+	
+}
+.atcinfotitle{
+	background: rgba(0,0,0,0.4);
+	padding-right:100px;
+	padding-left:100px;
+	padding-top:40px;
+	padding-bottom:40px;
+	border: 3px solid white;	
+	width:50%;
+	font-family:calibri;
+	color:white;
+	box-shadow: 0px 0px 10px #000000;
+
+}
+#open1, #open2, #open3{
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:20px;
+	padding-bottom:20px;
+	font-family:consolas;
+	font-size:30px;
+	color:black;
+	text-decoration:none;
+	background:rgba(20, 90,10,0.9);
+	border-radius:10px 10px 10px 10px;
+	border-top:5px solid rgba(120,120,70, 0.7);
+	border-right:5px solid rgba(120,120,70, 0.7);
+	transition:background 0.5s, border-top 0.5s,border-right 0.5s, box-shadow 0.2s;
+	
+}
+#open1:hover, #open2:hover, #open3:hover{
+	background:rgba(10,10,10,0.9);
+	color:grey;
+	border-top:5px solid grey;
+	border-right:5px solid grey;	
+	cursor:hand;
+	box-shadow: 0px 0px 7px #000000;
+}
+
+#aboutATC{
+	padding:10px;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	display:none;
+	width:500px;
+	border: 3px solid white;
+	font-family:calibri;
+	box-shadow: 0px 0px 10px #000000;
+}
+
+.inputatc{
+	background:rgba(0,0,0,0.1);
+	border-radius:5px 5px 5px 5px;
+	color:white;
+	width:130px;
+}	
+
+
+
+.flight{
+	font-family:calibri;
+	border:1px dashed black;
+	padding:10px;
+}
+
+.submitatc{
+	font-size:15px;
+	background:black;
+	color:white;
+	width:100px;
+	padding:5px;
+	border-radius:10px;
+	transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+	cursor:hand;
+	
+}
+.pred{
+	
+	font-size:15px;
+	font-family:calibri;
+	background:black;
+	text-decoration:none;
+	color:white;
+	width:100px;
+	padding:15px;
+	border-radius:10px;
+	transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+	cursor:hand;
+	
+}
+
+.pred:hover{
+	background:white;
+	color:black;
+	box-shadow:0px 0px 10px #000000;
+}
+
+
+.resultatc{
+	font-size:15px;
+	background:black;
+	color:white;
+	width:220px;
+	padding:5px;
+	border-radius:10px;
+	cursor:hand;
+	transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+	
+}
+.submitatc:hover, .resultatc:hover{
+	background:white;
+	color:black;
+	box-shadow:0px 0px 10px #000000;
+	
+	
+}
+
+
+.footer{
+	text-align:center;
+	color:white;
+	background:rgba(0,0,0,0.4);
+	border: 3px solid white;
+	width:20%;
+	padding:10px;
+	font-family:Consolas;
+	
+}
+
+
+
+
+

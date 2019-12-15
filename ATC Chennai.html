@@ -1,0 +1,279 @@
+<html>
+
+<head>
+<link href="..\ATC\style1.css" type="text/css" rel="stylesheet">
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<title>ATC Chennai</title>
+
+<style>
+
+
+body {
+  background-image: url("../ATC/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<table data-aos="zoom-in-right">
+	<tr>
+		<td class="title">
+			ATC CHENNAI
+		</td>
+	</tr>
+</table>
+
+
+<br>
+<br>
+
+
+
+
+<table class="table" data-aos="zoom-in">
+	<tr>
+		<td  class="td">Number of runways</td><td class="td" id="homeatcrunway"></td>
+	</tr>
+	<tr>
+		<td  class="td">Landing Queue Limit</td><td id="homeatclanding" class="td"></td>
+	</tr>
+	<tr>
+		<td  class="td">Takeoff Queue Limit</td><td id="homeatctakeoff" class="td"></td>
+	</tr>
+
+</table>
+
+
+
+<table class="l" style="margin-top:-100px;">
+<tr>
+	<td class="atc"><a class="atclink" href="..\ATC\ATC BOMBAY.html" title="Bombay">ATC Bombay</a></td>
+</tr>
+<tr>
+	<td class="atc"><a class="atclink" href="..\ATC\ATC Hyderabad.html" title="Hyderabad">ATC Hyderabad</a></td>
+</tr>
+<tr>
+	<td class="atc"><a class="atclink" href="..\ATC\ATC New Delhi.html" title="New Delhi">ATC New Delhi</a></td>
+</tr>
+<tr>
+	<td class="atc"><a class="atclink" href="..\ATC\ATC Chennai.html" title="Chennai">ATC Chennai</a></td>
+</tr>
+<tr>
+	<td class="atc"><a class="atclink" href="..\ATC\ATC Kolkata.html" title="Kolkata">ATC Kolkata</a></td>
+</tr>
+</table>
+
+
+
+
+
+<center>
+
+<table class="atctable" data-aos="zoom-in-up">
+<tr>
+	<td><button id="open1">ATC 1</button></td>
+	<td><button id="open2">ATC 2</button></td>
+	<td><button id="open3">ATC 3</button></td>
+</tr>
+<table>
+</center>
+<p id="aboutATC"></p>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="../ATC/jqchennai.js">
+
+</script>
+
+
+
+<br>
+<br>
+
+<p style="font-family:consolas; font-size:35px; text-align:left; text-decoration:underline;">
+
+<center><b style="font-family:calibri;font-size:40px;text-shadow:0px 0px 3px #000000;" data-aos="fade-in">
+Enter information for arrangement of flights on vicinity
+</b>
+</center><br>
+<p class="atcinfotitle" data-aos="zoom-in-up">
+ FUEL REQUIRED FOR LANDING : 5 UNITS<br>
+ FUEL REQUIRED TO WAIT IN QUEUE IN CASE RUNWAY IS FULL : 2 UNITS<br>
+ FUEL RANGE TO INPUT : 20-6000 UNITS<br>
+ ASSUMED TAKE OFF TIME AS 5 SECONDS<br>
+ <b style="font-size:30px !important"><u>In Output, Undefined means Empty</u></b>
+
+
+</p>
+
+<p id='input'>
+<table style="margin-left:10px;">
+<tr>
+<td class="flight">Flight Number:<input value="1" class="inputatc" id='jsonfn1' type='number'><br>Fuel:<input value="34" class="inputatc" id='jsonf1' type='number'><br>Emergency:<input id='jsone1' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="2" class="inputatc" id='jsonfn2' type='number'><br>Fuel:<input value="23" class="inputatc" id='jsonf2' type='number'><br>Emergency:<input id='jsone2' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="3" class="inputatc" id='jsonfn3' type='number'><br>Fuel:<input value="523" class="inputatc" id='jsonf3' type='number'><br>Emergency:<input id='jsone3' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="4" class="inputatc" id='jsonfn4' type='number'><br>Fuel:<input value="623" class="inputatc" id='jsonf4' type='number'><br>Emergency:<input id='jsone4' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="5" class="inputatc" id='jsonfn5' type='number'><br>Fuel:<input value="324" class="inputatc" id='jsonf5' type='number'><br>Emergency:<input id='jsone5' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="6" class="inputatc" id='jsonfn6' type='number'><br>Fuel:<input value="555" class="inputatc" id='jsonf6' type='number'><br>Emergency:<input id='jsone6' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="7" class="inputatc" id='jsonfn7' type='number'><br>Fuel:<input value="898" class="inputatc" id='jsonf7' type='number'><br>Emergency:<input id='jsone7' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="8" class="inputatc" id='jsonfn8' type='number'><br>Fuel:<input value="1211" class="inputatc" id='jsonf8' type='number'><br>Emergency:<input id='jsone8' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="9" class="inputatc" id='jsonfn9' type='number'><br>Fuel:<input value="1555" class="inputatc" id='jsonf9' type='number'><br>Emergency:<input id='jsone9' class="inputatc" type='text' name="emergency" value='NO'></td></tr><tr>
+<td class="flight">Flight Number:<input value="10" class="inputatc" id='jsonfn10' type='number'><br>Fuel:<input value="1556" class="inputatc" id='jsonf10' type='number'><br>Emergency:<input id='jsone10' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="11" class="inputatc" id='jsonfn11' type='number'><br>Fuel:<input value="1557" class="inputatc" id='jsonf11' type='number'><br>Emergency:<input id='jsone11' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="12" class="inputatc" id='jsonfn12' type='number'><br>Fuel:<input value="1558" class="inputatc" id='jsonf12' type='number'><br>Emergency:<input id='jsone12' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="13" class="inputatc" id='jsonfn13' type='number'><br>Fuel:<input value="1559" class="inputatc" id='jsonf13' type='number'><br>Emergency:<input id='jsone13' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="14" class="inputatc" id='jsonfn14' type='number'><br>Fuel:<input value="1560" class="inputatc" id='jsonf14' type='number'><br>Emergency:<input id='jsone14' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="15" class="inputatc" id='jsonfn15' type='number'><br>Fuel:<input value="1561" class="inputatc" id='jsonf15' type='number'><br>Emergency:<input id='jsone15' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="16" class="inputatc" id='jsonfn16' type='number'><br>Fuel:<input value="1562" class="inputatc" id='jsonf16' type='number'><br>Emergency:<input id='jsone16' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="17" class="inputatc" id='jsonfn17' type='number'><br>Fuel:<input value="1563" class="inputatc" id='jsonf17' type='number'><br>Emergency:<input id='jsone17' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="18" class="inputatc" id='jsonfn18' type='number'><br>Fuel:<input value="1566" class="inputatc" id='jsonf18' type='number'><br>Emergency:<input id='jsone18' class="inputatc" type='text' name="emergency" value='NO'></td></tr><tr>
+<td class="flight">Flight Number:<input value="19" class="inputatc" id='jsonfn19' type='number'><br>Fuel:<input value="1567" class="inputatc" id='jsonf19' type='number'><br>Emergency:<input id='jsone19' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="20" class="inputatc" id='jsonfn20' type='number'><br>Fuel:<input value="1568" class="inputatc" id='jsonf20' type='number'><br>Emergency:<input id='jsone20' class="inputatc" type='text' name="emergency" value='NO'></td>
+<td class="flight">Flight Number:<input value="21" class="inputatc" id='jsonfn21' type='number'><br>Fuel:<input value="1569" class="inputatc" id='jsonf21' type='number'><br>Emergency:<input id='jsone21' class="inputatc" type='text' name="emergency" value='NO'></td>
+</tr>
+</table>
+<br>
+
+<table style="margin-left:10px; color:white;">
+<tr><td colspan="4" class="flight">ENTER UNITS OF FUEL CONSUMED PER KM <input type="number" class="inputatc" id="milage" /></td></tr>
+</table>
+</p>
+
+</p>
+
+
+
+
+
+<button class="submitatc" onclick="submit()" data-aos="zoom-in-left" data-aos-duration="500"><b>Submit<b></button><br><br>
+<button class="resultatc" onclick="processing()" data-aos="zoom-in-right" data-aos-duration="500"><b>Click here for Results<b></button><br><br><br>
+<a class="pred" href="http://127.0.0.1:5000" >Predict flight delay</a>
+<div id="main"></div>
+<div id="atc1"></div>
+<div id="atc2"></div>
+<div id="atc3"></div>
+<p id="mainatcstatus"></p>
+
+
+
+
+<script src="../ATC/js1.js">
+
+
+</script>
+
+
+<script src="../ATC/js2.js">
+
+
+</script>
+
+<script src="../ATC/js3.js">
+
+</script>
+<br><br>
+<table width="50%">
+	<tr>
+		<td>
+			<table class="abc" style="border:1px solid black;" >
+			<tr><th>ATC Bombay Status</th></tr>
+			<tr>
+			<td id="nota"></td></tr>
+			<tr>
+			<td id="notb"></td></tr>
+			<tr>
+			<td id="notbt"></td></tr>
+			<tr>
+			<td id="notc"></td></tr>
+			<tr>
+			<td id="notct"></td></tr>
+			<tr>
+			<td id="notd"></td></tr>
+			<tr>
+			<td id="notdt"></td></tr>
+			<tr>
+			<td id="notdt1"></td>
+			</tr>
+			<tr>
+			<td id="notdt2"></td>
+			</tr>
+			</table>
+		</td>
+		<td>
+			<table class="abc" style="border:1px solid black;">
+			<tr><th>Terminal 2 Status</th></tr>
+			<tr>
+			<td id="not2a"></td></tr><tr>
+			<td id="not2b"></td></tr><tr>
+			<td id="not2bt"></td></tr><tr>
+			<td id="not2c"></td></tr><tr>
+			<td id="not2ct"></td></tr><tr>
+			<td id="not2d"></td></tr><tr>
+			<td id="not2dt"></td></tr><tr>
+			<td id="not2dt1"></td></tr><tr>
+			<td id="not2dt2"></td></tr><tr>
+			<td id="not2dt3"></td></tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<table class="abc" style="border:1px solid black;">
+			<tr><th>Terminal 1 Status</th></tr>
+			<tr>
+			<td id="not1a"></td></tr><tr>
+			<td id="not1b"></td></tr><tr>
+			<td id="not1bt"></td></tr><tr>
+			<td id="not1c"></td></tr><tr>
+			<td id="not1ct"></td></tr><tr>
+			<td id="not1ct1"></td></tr><tr>
+			<td id="not1ct2"></td></tr><tr>
+			<td id="not1ct3"></td></tr>
+			</table>
+		</td>
+		<td>
+			<table class="abc" style="border:1px solid black;">
+			<tr><th>Terminal 3 Status</th></tr>
+			<tr>
+			<td id="not3a"></td></tr><tr>
+			<td id="not3b"></td></tr><tr>
+			<td id="not3bt"></td></tr><tr>
+			<td id="not3c"></td></tr><tr>
+			<td id="not3ct"></td></tr><tr>
+			<td id="not3d"></td></tr><tr>
+			<td id="not3dt"></td></tr><tr>
+			<td id="not3dt1"></td></tr><tr>
+			<td id="not3dt2"></td></tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+
+
+<br>
+<br>
+
+<div class="footer">
+<footer>A Project by Team MMH</footer>
+</div>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="..\ATC\AOSscript.js"></script>
+
+
+
+</body>
+</html>
