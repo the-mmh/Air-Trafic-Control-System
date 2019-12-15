@@ -31,3 +31,6 @@ On the UI there is input table where ATC officers is supposed to enter the detai
 2) fuel required to travel per km
 3) no. of runways & terminals in a airport
 
+## How to run the Web application
+
+Simply put all the above file in a folder named "ATC" and open the html file.
